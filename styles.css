@@ -1,0 +1,360 @@
+/* External CSS styles - Nishita's Unique Nature Theme */
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #2d5a27;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 50%, #d4edda 100%);
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(45, 90, 39, 0.3);
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+/* Main content styles */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #2d5a27;
+    border-bottom: 3px solid #4a7c59;
+    padding-bottom: 12px;
+    margin: 30px 0 20px 0;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #3a6b47;
+    margin: 15px 0 10px 0;
+}
+
+/* Profile image */
+.profile-image {
+    border-radius: 50%;
+    border: 6px solid #4a7c59;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Link styles */
+a {
+    color: #2d5a27;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    color: #4a7c59;
+    border-bottom: 2px solid #4a7c59;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.nav-btn {
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(45, 90, 39, 0.3);
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(45, 90, 39, 0.4);
+    color: white;
+    border-bottom: none;
+}
+
+.back-btn {
+    background: linear-gradient(135deg, #4a7c59 0%, #2d5a27 100%);
+}
+
+/* Table styles */
+.unique-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.unique-table th, .unique-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.unique-table th {
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+    color: white;
+    font-weight: 600;
+}
+
+.unique-table tr:nth-child(even) {
+    background-color: #f0f8f0;
+}
+
+.unique-table tr:hover {
+    background-color: #e8f5e8;
+    transition: background-color 0.3s ease;
+}
+
+/* List styles */
+.styled-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.styled-list li {
+    padding: 12px 0 12px 40px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.styled-list li::before {
+    content: '🌿';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 1.2em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-top: 2px solid #4a7c59;
+    color: #3a6b47;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Better touch targets for mobile */
+.nav-btn, 
+input[type="submit"], 
+input[type="radio"], 
+input[type="checkbox"] {
+    min-height: 44px; /* Minimum touch target size */
+}
+
+/* Improve text readability on mobile */
+p, li, td {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Better spacing for mobile */
+section {
+    margin-bottom: 30px;
+}
+
+/* Adjust font sizes for better hierarchy */
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+
+@media (max-width: 768px) {
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.3em; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    header {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+    
+    .header-content h1 {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+    
+    .header-content h2 {
+        font-size: 1.1em;
+    }
+    
+    .tagline {
+        font-size: 1em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin: 20px 0 15px 0;
+    }
+    
+    /* Navigation buttons stack vertically */
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+    
+    /* Fix tables for mobile */
+    .unique-table {
+        font-size: 0.85em;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .unique-table th, .unique-table td {
+        padding: 10px 8px;
+        min-width: 120px;
+    }
+    
+    /* Adjust grid layouts */
+    .nature-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    
+    .eco-principles {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* Form improvements */
+    .form-container {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+    
+    .form-group {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    
+    /* Profile image sizing */
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+    
+    .header-content h1 {
+        font-size: 1.7em;
+    }
+    
+    .header-content h2 {
+        font-size: 1em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    /* Even smaller on very small screens */
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero-section {
+        padding: 30px 15px;
+    }
+    
+    .vision-statement {
+        padding: 25px 15px;
+    }
+    
+    /* Better form inputs */
+    input[type="text"], 
+    textarea, 
+    select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
